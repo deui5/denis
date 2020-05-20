@@ -1,4 +1,5 @@
-{
+{ "name": "idk",
+    "description": "nvm",
     "require": {
         "ext-mysql": "*"
     }
