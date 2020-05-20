@@ -11,13 +11,13 @@
   <?php
   if($_COOKIE['user'] == ''):
     ?>
-    <?php require "blocks/header.php" ?>
+    <?php require "../blocks/header.php" ?>
   <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
     <h1 class="display-4">Ошибка</h1>
     <p class="lead">Вы не авторизованы</p>
   </div>
   <?php else: ?>
-    <?php require "blocks/header2.php" ?>
+    <?php require "../blocks/header2.php" ?>
     <h1 class="cheers" align="center">Привет, <?=$_COOKIE['user']?>!</h1>
     <h2 class="cheers text-muted" align="center">Ученье - свет, неученье - тьма.</h2>
     <div class="card-deck mb-3 text-center">
@@ -76,6 +76,6 @@
 <?php endif;?>
 
 
-  <?php require "blocks/footer.php" ?>
+  <?php require "../blocks/footer.php" ?>
 </body>
 </html>

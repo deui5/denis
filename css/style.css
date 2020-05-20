@@ -1,7 +1,7 @@
 form {
   width: 500px;
 }
-
+body { background-image: url(../img/background.jpg) }
 .card {
   width: 32%;
   margin-left: 1%;

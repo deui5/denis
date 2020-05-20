@@ -21,5 +21,5 @@ require "connect.php";
 $mysql->query("INSERT INTO `users` ( `login`, `pass`, `name`) VALUES ('$login', ('$pass'), '$name')") ;
 
 $mysql->close();
-header('location: /login.php' );
+header('location: login.php' );
  ?>

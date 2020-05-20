@@ -12,5 +12,5 @@ if (count ($user)==0) {
 }
 setcookie("user", $user['name'], time()+3600,"/");
 $mysql->close();
-header('location: /main.php' );
+header('location: main.php' );
 ?>

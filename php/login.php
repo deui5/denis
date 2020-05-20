@@ -9,7 +9,7 @@
   <title>PHP web-site</title>
 </head>
 <body>
-  <?php require "blocks/header.php" ?>
+  <?php require "../blocks/header.php" ?>
   <div class="container mt-4">
     <?php
      if ($_COOKIE['user']==''):
@@ -17,7 +17,7 @@
       <div class="row">
          <div class="col">
            <h1>Всё еще не с нами?</h1>
-           <form  action="php/check.php" method="post">
+           <form  action="check.php" method="post">
              <input type="text" class="form-control" name="login" id="login" placeholder="Введите ваш логин"><br>
 
              <input type="text" class="form-control" name="name" id="name" placeholder="Введите ваше имя"><br>
@@ -31,7 +31,7 @@
 
          <div class="col">
            <h1>Уже есть аккаунт?</h1>
-           <form  action="php/auth.php" method="post">
+           <form  action="auth.php" method="post">
              <input type="text" class="form-control" name="login" id="login" placeholder="Введите ваш логин"><br>
 
              <input type="password" class="form-control" name="pass" id="pass" placeholder="Введите ваш пароль"><br>
@@ -40,12 +40,12 @@
            </form>
          </div>
            <?php else:?>
-             <p>Привет  <?php $_COOKIE['user'] ?>.Чтобы выйти нажмите  <a href="php/exit.php">здесь</a> </p>
+             <p>Привет  <?php $_COOKIE['user'] ?>.Чтобы выйти нажмите  <a href="exit.php">здесь</a> </p>
          <?php endif; ?>
 
       </div>
   </div>
 
 </body>
-<?php require "blocks/footer.php" ?>
+<?php require "../blocks/footer.php" ?>
 </html>

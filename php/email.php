@@ -17,5 +17,5 @@ $error ='Введите ваш Email';
  $subject = "=?utf-8?B?".base64_encode("Тестовое сообщение")."?=";
  $headers = "From: $email\r\nReply-to: $email\r\nContent-type: text/html; charset=utf-8\r\n";
  mail('kypecxrsac@gmail.com', $subject, $message, $headers);
-header('location: /contact.php' );
+header('location: contact.php' );
  ?>

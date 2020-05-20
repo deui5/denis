@@ -12,20 +12,20 @@
   <?php
   if($_COOKIE['user'] == ''):
     ?>
-    <?php require "blocks/header.php" ?>
+    <?php require "../blocks/header.php" ?>
     <div class="container mt-5" align="center">
       <h3>Контактная форма</h3>
-      <form  action="php/email.php" method="post">
+      <form  action="email.php" method="post">
         <input type="email" name="email" placeholder="Введите Email" class="form-control"><br>
         <textarea name="message" class="form-control" placeholder="Введите ваше сообщение"></textarea><br>
         <button class="btn btn-success"type="submit" name="send">Отправить</button>
       </form>
 
 <?php else: ?>
-  <?php require "blocks/header2.php" ?>
+  <?php require "../blocks/header2.php" ?>
   <div class="container mt-5" align="center">
     <h3>Контактная форма</h3>
-    <form  action="php/email.php" method="post">
+    <form  action="email.php" method="post">
       <input type="email" name="email" placeholder="Введите Email" class="form-control"><br>
       <textarea name="message" class="form-control" placeholder="Введите ваше сообщение"></textarea><br>
       <button class="btn btn-success"type="submit" name="send">Отправить</button>
@@ -33,7 +33,7 @@
   <?php endif;?>
   <br>
   <br>
-  <?php require "blocks/footer.php" ?>
+  <?php require "../blocks/footer.php" ?>
 
 
 </body>
