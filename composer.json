@@ -1,6 +1,7 @@
 { "name": "idk",
     "description": "nvm",
     "require": {
+        "package1": "*" ,
         "ext-mysql": "*"
     }
 }
