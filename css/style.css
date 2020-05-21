@@ -1,8 +1,8 @@
-form {
-  width: 500px;
+.form {
+  width: 200px;
 }
-body { background-image: url(../img/background.jpg) }
 .card {
   width: 32%;
+  height: 32%;
   margin-left: 1%;
 }
